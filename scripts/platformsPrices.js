@@ -9,49 +9,49 @@ function calculatePlatformsTotalPrice () {
     PLATFORMS.forEach((platform) => {
 
         if (platform.value === 'netflix') {
-            platformPrice = 20;
+            platformPrice = 6.5;
             selectedPlatforms.push({
                 name: platform.value,
                 price: platformPrice,
             });
         } else if (platform.value === 'amazon') {
-            platformPrice = 25;
+            platformPrice = 4;
             selectedPlatforms.push({
                 name: platform.value,
                 price: platformPrice,
             });
         } else if (platform.value === 'disney') {
-            platformPrice = 22;
+            platformPrice = 6.2;
             selectedPlatforms.push({
                 name: platform.value,
                 price: platformPrice,
             });
         } else if (platform.value === 'hulu') {
-            platformPrice = 16;
+            platformPrice = 3;
             selectedPlatforms.push({
                 name: platform.value,
                 price: platformPrice,
             });
         } else if (platform.value === 'hbo') {
-            platformPrice = 18;
+            platformPrice = 3.5;
             selectedPlatforms.push({
                 name: platform.value,
                 price: platformPrice,
             });
         } else if (platform.value === 'crunchyroll') {
-            platformPrice = 20;
+            platformPrice = 3.6;
             selectedPlatforms.push({
                 name: platform.value,
                 price: platformPrice,
             });
         } else if (platform.value === 'apple') {
-            platformPrice = 28;
+            platformPrice = 4;
             selectedPlatforms.push({
                 name: platform.value,
                 price: platformPrice,
             });
         } else if (platform.value === 'youtube') {
-            platformPrice = 12;
+            platformPrice = 4.6;
             selectedPlatforms.push({
                 name: platform.value,
                 price: platformPrice,
