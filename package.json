@@ -1,0 +1,19 @@
+{
+  "name": "js-challenge-exercises",
+  "version": "1.0.0",
+  "description": "Calculator for comparing prices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/carlosmachadom/platzi-curso-practico-js.git"
+  },
+  "author": "Carlos Machado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlosmachadom/platzi-curso-practico-js/issues"
+  },
+  "homepage": "https://github.com/carlosmachadom/platzi-curso-practico-js#readme"
+}
