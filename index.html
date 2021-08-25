@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- METAS -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- /METAS -->
+
+        <!-- LINKS -->
+        <link rel="stylesheet" href="./style/style.css" />
+        <!-- LINKS -->
+
+        <title>Streaming platforms calculation</title>
+    </head>
+
+    <!-- BODY -->
+    <body>
+        <!-- HEADER -->
+        <header>
+            <h1>Streaming platforms calculation</h1>
+            <p>JS Challenge Exercise</p>
+        </header>
+        <!-- /HEADER -->
+
+        <!-- Calculation section -->
+        <section>
+            <h2>Calculate how much you spend on streaming platforms</h2>
+
+            <form action="">
+                <label for="films-quantity">How many movies you watch a month?</label>
+                <br>
+                <input type="number" id="films-quantity" name="films"/>
+                <br>
+
+                <label for="countries">Choose your country</label>
+                <br>
+                <select name="countries" id="countries">
+                    <option value="disabled" disabled >Select your country</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Mexico">Mexico</option>
+                </select>
+                <br>
+
+                <fieldset>
+                    <legend>Select the streaming platforms you use</legend>
+
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="netflix" name="platform"/>
+                            <label for="netflix">Netflix</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="amazon" name="platform"/>
+                            <label for="amazon">Amazon prime video</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="disney" name="platform"/>
+                            <label for="disney">Disney+</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="hulu" name="platform"/>
+                            <label for="hulu">Hulu TV</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="hbo" name="platform"/>
+                            <label for="hbo">HBO Max</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="crunchyroll" name="platform"/>
+                            <label for="crunchyroll">Crunchyroll</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="apple" name="platform"/>
+                            <label for="apple">Apple TV</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="youtube" name="platform"/>
+                            <label for="youtube">YouTube Premium</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <button type="button" onclick="">Calculate</button>
+            </form>
+
+            <p></p>
+        </section>
+        <!-- /Calculation section -->
+
+        <!-- SCRIPTS -->
+        <script src="./scripts/streamingPlatforms.js"></script>
+        <script src="./scripts/countries.js"></script>
+        <script src="./scripts/index.js"></script>
+        <!-- /SCRIPTS -->
+    </body>
+    <!-- /BODY -->
+</html>
