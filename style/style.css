@@ -23,4 +23,223 @@ ul > li > a {
 body {
     width: 100%;
     height: 100%;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-auto-columns: 1fr;
+}
+
+/* Header structure */
+.header {
+    width: 100%;
+    padding: 2.8rem 2rem;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 1px;
+    vertical-align: middle;
+
+    margin-block-end: 1rem;
+}
+
+.header p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 18px;
+    vertical-align: middle;
+    letter-spacing: 1px;
+}
+
+/* Main structure */
+.main {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main .exercise-title {
+    font-size: 2.2rem;
+    line-height: 22px;
+    vertical-align: middle;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.main .calculator-container {
+
+    width: 100%;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.main .calculator-container .form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 1rem;
+}
+
+.calculator-container .form-container .form {
+    width: 100%;
+    padding: 2rem;
+    margin-block-end: 1rem;
+    border: solid 2px black;
+}
+
+/* Movie tickets section */
+
+.form .form-section-one, .form-section-two {
+    width: 100%;
+    margin-block-end: 2rem;
+}
+
+.form .form-section-one label {
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.form .form-section-one input, select {
+    width: 100%;
+    height: 35px;
+    display: inline-block;
+    padding: 0 .5rem;
+    margin-bottom: 1rem;
+}
+
+.form .form-section-one select {
+    margin-bottom: 0;
+}
+
+/* Streaming platforms section */
+.form .form-section-two
+{
+    padding: 1rem;
+}
+
+.form .form-section-two .title {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 18px;
+    vertical-align: middle;
+    letter-spacing: 1px;
+}
+
+.form .form-section-two .items li {
+    width: 100%;
+    margin-block-end: .5rem;
+}
+
+.form .form-section-two .items li > label {
+    width: 100%;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    font-size: 1.4rem;
+    line-height: 14px;
+    vertical-align: middle;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.form .form-section-two .items li > label > input {
+    margin: 0 .5rem 0 0;
+}
+
+/* Submit section */
+.form .form-section-three {
+    width: 100%;
+}
+
+.form .form-section-three button {
+    width: 100%;
+    height: 35px;
+
+    font-size: 1.4rem;
+    line-height: 14px;
+    vertical-align: middle;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+
+/* Retults section */
+.main .calculator-container .results-section {
+    margin: 0 1rem;
+}
+
+.main .calculator-container .results-section .results-container {
+    width: 100%;
+    max-width: 600px;
+    height: 150px;
+    padding: 2rem;
+    text-align: center;
+
+    border: solid 2px black;
+}
+
+.calculator-container .results-container .title-result {
+    font-size: 1.8rem;
+    line-height: 14px;
+    vertical-align: middle;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    margin-block-end: 1rem;
+} 
+
+.calculator-container .results-container .tagline-result {
+    font-size: 1.4rem;
+    line-height: 14px;
+    vertical-align: middle;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.calculator-container .results-container div {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+}
+
+.calculator-container .results-container div > .result {
+    font-size: 1.6rem;
+    line-height: 16px;
+    vertical-align: middle;
+    font-weight: 500;
+}
+
+.calculator-container .results-container div > .result:nth-child(1) {
+    margin-bottom: 1rem;
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    padding: 2.8rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.footer p {
+    font-size: 1.4rem;
+    line-height: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    vertical-align: middle;
 }

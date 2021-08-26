@@ -1,5 +1,5 @@
 // Total streaming platforms price
-let selectedPlatforms = [];
+const selectedPlatforms = [];
 
 function calculatePlatformsTotalPrice () {
     const PLATFORMS = document.querySelectorAll('input[name="platform"]:checked');
@@ -59,9 +59,9 @@ function calculatePlatformsTotalPrice () {
         }
     });
 
-    let individualPrices = selectedPlatforms.map(platform => platform.price);
+    const individualPrices = selectedPlatforms.map(platform => platform.price);
 
-    let calculateTotalPrice = individualPrices.reduce( 
+    const calculateTotalPrice = individualPrices.reduce( 
         function (valorInicial = 0, siguienteValor) {
             return valorInicial + siguienteValor
         }

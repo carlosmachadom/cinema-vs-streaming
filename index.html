@@ -17,108 +17,111 @@
     <!-- BODY -->
     <body>
         <!-- HEADER -->
-        <header>
-            <h1>Streaming platforms calculation</h1>
-            <p>JS Challenge Exercise</p>
+        <header class="header">
+            <h1 class="header-title">Streaming platforms vs cinema tickets</h1>
+            <p class="header-tagline">JS Challenge Exercise</p>
         </header>
         <!-- /HEADER -->
 
         <!-- Calculation section -->
-        <main>
-            <h2>Calculate how much you spend on streaming platforms</h2>
+        <main class="main">
+            <h2 class="exercise-title">Money you spend on streaming platforms vs cinema tickets</h2>
+            <section class="calculator-container">      
+                <section class="form-container">
+                    <form action="" class="form">
+                        <section class="form-section-one">
+                            <label for="films-quantity">Quantity of movies you watch monthly</label>
+                            <br>
+                            <input type="number" id="films-quantity" name="films" required />
+                            <br>
+        
+                            <label for="countries">Choose your country</label>
+                            <br>
+                            <select name="countries" id="countries">
+                                <option value="disabled" disabled >Select your country</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Mexico">Mexico</option>
+                            </select>
+                        </section>
 
-            <section>
-                <form action="">
-                    <section>
-                        <label for="films-quantity">How many movies you watch a month?</label>
-                        <br>
-                        <input type="number" id="films-quantity" name="films" required />
-                        <br>
-    
-                        <label for="countries">Choose your country</label>
-                        <br>
-                        <select name="countries" id="countries">
-                            <option value="disabled" disabled >Select your country</option>
-                            <option value="Colombia">Colombia</option>
-                            <option value="Mexico">Mexico</option>
-                        </select>
-                    </section>
+                        <fieldset class="form-section-two">
+                            <legend class="title"><strong>Select the streaming platforms you use</strong></legend>
 
-                    <fieldset>
-                        <legend><strong>Select the streaming platforms you use</strong></legend>
+                            <ul class="items">
+                                <li>
+                                    <label for="netflix">
+                                        <input type="checkbox" id="netflix" name="platform" value="netflix"/> Netflix
+                                    </label>
+                                </li>
 
-                        <ul>
-                            <li>
-                                <label for="netflix">
-                                    <input type="checkbox" id="netflix" name="platform" value="netflix"/> Netflix
-                                </label>
-                            </li>
+                                <li>
+                                    <label for="amazon">
+                                        <input type="checkbox" id="amazon" name="platform" value="amazon"/> Amazon prime video
+                                    </label>
+                                </li>
 
-                            <li>
-                                <label for="amazon">
-                                    <input type="checkbox" id="amazon" name="platform" value="amazon"/> Amazon prime video
-                                </label>
-                            </li>
+                                <li>
+                                    <label for="disney">
+                                        <input type="checkbox" id="disney" name="platform" value="disney" /> Disney+
+                                    </label>
+                                </li>
 
-                            <li>
-                                <label for="disney">
-                                    <input type="checkbox" id="disney" name="platform" value="disney" /> Disney+
-                                </label>
-                            </li>
+                                <li>
+                                    <label for="hulu">
+                                        <input type="checkbox" id="hulu" name="platform" value="hulu"/> Hulu TV
+                                    </label>
+                                </li>
 
-                            <li>
-                                <label for="hulu">
-                                    <input type="checkbox" id="hulu" name="platform" value="hulu"/> Hulu TV
-                                </label>
-                            </li>
+                                <li>
+                                    <label for="hbo">
+                                        <input type="checkbox" id="hbo" name="platform" value="hbo"/> HBO Max
+                                    </label>
+                                </li>
 
-                            <li>
-                                <label for="hbo">
-                                    <input type="checkbox" id="hbo" name="platform" value="hbo"/> HBO Max
-                                </label>
-                            </li>
+                                <li>
+                                    <label for="crunchyroll">
+                                        <input type="checkbox" id="crunchyroll" name="platform" value="crunchyroll"/> Crunchyroll
+                                    </label>
+                                </li>
 
-                            <li>
-                                <label for="crunchyroll">
-                                    <input type="checkbox" id="crunchyroll" name="platform" value="crunchyroll"/> Crunchyroll
-                                </label>
-                            </li>
+                                <li>
+                                    <label for="apple">
+                                        <input type="checkbox" id="apple" name="platform" value="apple"/> Apple TV
+                                    </label>
+                                </li>
 
-                            <li>
-                                <label for="apple">
-                                    <input type="checkbox" id="apple" name="platform" value="apple"/> Apple TV
-                                </label>
-                            </li>
+                                <li>
+                                    <label for="youtube">
+                                        <input type="checkbox" id="youtube" name="platform" value="youtube"/> YouTube Premium
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
 
-                            <li>
-                                <label for="youtube">
-                                    <input type="checkbox" id="youtube" name="platform" value="youtube"/> YouTube Premium
-                                </label>
-                            </li>
-                        </ul>
-                    </fieldset>
+                        <section class="form-section-three">
+                            <button type="button" onclick="comparingPrices()">Calculate</button>
+                        </section>
+                    </form>
+                </section>
 
-                    <section>
-                        <button type="button" onclick="comparingPrices()">Calculate</button>
-                    </section>
-                </form>
-            </section>
-
-            <section>
-                <article>
-                    <h3>Compare prices</h3>
-                    <p><i>If you have a lower price on ticket prices than platfor prices, that is a Big Deal, otherwise is a Bad deal.</i></p>
-    
-                    <p id="tickets-price"></p>
-                    <p id="platforms-price"></p>
-                </article>
+                <section class="results-section">
+                    <article class="results-container">
+                        <h3 class="title-result">Compare prices</h3>
+                        <p class="tagline-result"><i>Lower prices on tickets than platforms is a <strong>big deal</strong>, otherwise is a <strong>bad idea</strong>.</i></p>
+                        
+                        <div>
+                            <p class="result" id="tickets-price"></p>
+                            <p class="result" id="platforms-price"></p>
+                        </div>                    
+                    </article>
+                </section>
             </section>                      
         </main>
         <!-- /Calculation section -->
 
         <!-- FOOTER -->
-        <footer>
-            <p>Hecho con amor♥ por @carlosmachadom</p>
+        <footer class="footer">
+            <p>Hecho con ♥ por @carlosmachadom_</p>
         </footer>
         <!-- /FOOTER -->
 
