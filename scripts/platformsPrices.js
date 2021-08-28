@@ -2,9 +2,7 @@
 const selectedPlatforms = [];
 
 function calculatePlatformsTotalPrice () {
-    const PLATFORMS = document.querySelectorAll('input[name="platform"]:checked');
-
-    let platformPrice;    
+    const PLATFORMS = document.querySelectorAll('input[name="platform"]:checked');       
 
     PLATFORMS.forEach((platform) => {
 
