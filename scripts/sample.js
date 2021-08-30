@@ -44,10 +44,12 @@ form.addEventListener('change', function () {
 
     if (netflix.checked) {
         suscriptionPrice += 6.5;
-        console.log(parseInt(suscriptionPrice));
-    } else if (!netflix.checked) {
-        suscriptionPrice = suscriptionPrice - suscriptionPrice;
-    }
+        console.log(parseInt(`You added netflix and its price is: $${suscriptionPrice}`));
+        if (netflix.checked === false) {
+            suscriptionPrice = suscriptionPrice - suscriptionPrice;
+            console.log('You decided to drop Netflix');
+        }
+    } 
     if (amazon.checked) {
         suscriptionPrice += 4;
         console.log(suscriptionPrice);
